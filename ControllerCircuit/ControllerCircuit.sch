@@ -1041,8 +1041,8 @@ Text Label 4450 2605 2    50   ~ 0
 EXT_IO_D
 Text Label 2715 7950 0    50   ~ 0
 EXT_IO_D
-Text Label 6430 4685 2    50   ~ 0
-MODULE_RX2
+Text Label 6520 4300 2    50   ~ 0
+SPARE2_INPUT
 Text Label 13700 2260 2    50   ~ 0
 IO21
 Text Label 13700 2560 2    50   ~ 0
@@ -1052,9 +1052,9 @@ IO22
 Text Label 9750 3680 0    50   ~ 0
 IO21
 Text Label 9535 4530 2    50   ~ 0
-MODULE_RX2
+SPARE2_INPUT
 Text Label 9540 4305 2    50   ~ 0
-MODULE_TX2
+SPARE1
 Wire Wire Line
 	9540 4305 9740 4305
 Wire Wire Line
@@ -2001,8 +2001,6 @@ Text Notes 9045 6410 0    50   ~ 0
 ATTINY841 as a watch dog timer, has interfaces to RESET \nlines of ESP8266 and i2c to receive data from ESP8266 (ping messages), \nalong with monitoring of transmit (TX1) to modules\n\nCan also take master role and drive i2c devices (relays/LED) if needed.
 Text Notes 9020 6005 0    79   ~ 16
 OPTIONAL
-Text Notes 6905 3650 0    79   ~ 16
-OPTIONAL
 Text Notes 12215 7805 0    39   ~ 0
 OPTIONAL
 Text Notes 10330 9965 0    39   ~ 0
@@ -2155,7 +2153,7 @@ F 5 "TCA6408AQPWRQ1" H 2015 8450 50  0001 C CNN "PartNumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5840 7840 5740 7840
+	5840 7840 5755 7840
 Wire Wire Line
 	5740 7840 5740 8080
 Wire Wire Line
@@ -2568,128 +2566,34 @@ Wire Wire Line
 Wire Wire Line
 	4680 1340 4270 1340
 Connection ~ 4270 1340
-Text Label 6030 3845 2    50   ~ 0
-MODULE_TX2
+Text Label 6370 4400 2    50   ~ 0
+SPARE1
 $Comp
-L Device:R R7
-U 1 1 600B1F7D
-P 6180 3845
-F 0 "R7" V 5973 3845 50  0000 C CNN
-F 1 "180R" V 6064 3845 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6110 3845 50  0001 C CNN
-F 3 "~" H 6180 3845 50  0001 C CNN
-F 4 "C25270" V 6180 3845 50  0001 C CNN "LCSCStockCode"
-F 5 "0805W8F1800T5E" V 6180 3845 50  0001 C CNN "PartNumber"
-F 6 "TRUE" V 6180 3845 50  0001 C CNN "DONOTPLACE"
-	1    6180 3845
-	0    1    1    0   
-$EndComp
-$Comp
-L Isolator:PC817 U7
-U 1 1 600B28A6
-P 6630 3945
-F 0 "U7" H 6630 4270 50  0000 C CNN
-F 1 "EL3H7(B)(TA)-G" H 6630 4179 50  0000 C CNN
-F 2 "Package_SO:SOP-4_4.4x2.6mm_P1.27mm" H 6430 3745 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-EL3H7-B-TA-G_C32565.pdf" H 6630 3945 50  0001 L CNN
-F 4 "C32565" H 6630 3945 50  0001 C CNN "LCSCStockCode"
-F 5 "90" H 6630 3945 50  0001 C CNN "JLCPCBRotation"
-F 6 "TRUE" H 6630 3945 50  0001 C CNN "DONOTPLACE"
-	1    6630 3945
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0142
-U 1 1 600B3733
-P 6330 4045
-F 0 "#PWR0142" H 6330 3795 50  0001 C CNN
-F 1 "GND" H 6335 3872 50  0000 C CNN
-F 2 "" H 6330 4045 50  0001 C CNN
-F 3 "" H 6330 4045 50  0001 C CNN
-	1    6330 4045
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male TX2
-U 1 1 600B4022
-P 7185 4000
-F 0 "TX2" H 7157 3882 50  0000 R CNN
-F 1 "Transmit" H 7157 3973 50  0000 R CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 7185 4000 50  0001 C CNN
-F 3 "" H 7185 4000 50  0001 C CNN
-F 4 "C157932" H 7185 4000 50  0001 C CNN "LCSCStockCode"
-F 5 "S2B-PH-K-S-GW" H 7185 4000 50  0001 C CNN "PartNumber"
-F 6 "TRUE" H 7185 4000 50  0001 C CNN "DONOTPLACE"
-	1    7185 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6930 3845 6985 3845
-Wire Wire Line
-	6985 3845 6985 3900
-Wire Wire Line
-	6985 4000 6985 4045
-Wire Wire Line
-	6985 4045 6930 4045
-$Comp
-L Connector:Conn_01x02_Male RX2
+L Connector:Conn_01x04_Male J14
 U 1 1 600E8743
-P 6885 4685
-F 0 "RX2" H 6695 4565 50  0000 L CNN
-F 1 "Receive" H 6575 4685 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 6885 4685 50  0001 C CNN
-F 3 "" H 6885 4685 50  0001 C CNN
-F 4 "C157932" H 6885 4685 50  0001 C CNN "LCSCStockCode"
-F 5 "S2B-PH-K-S-GW" H 6885 4685 50  0001 C CNN "PartNumber"
-F 6 "TRUE" H 6885 4685 50  0001 C CNN "DONOTPLACE"
-	1    6885 4685
+P 6825 4400
+F 0 "J14" H 6635 4280 50  0000 L CNN
+F 1 "Receive" H 6515 4400 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6825 4400 50  0001 C CNN
+F 3 "" H 6825 4400 50  0001 C CNN
+F 4 "" H 6825 4400 50  0001 C CNN "LCSCStockCode"
+F 5 "" H 6825 4400 50  0001 C CNN "PartNumber"
+	1    6825 4400
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R26
-U 1 1 600E8F82
-P 6580 4835
-F 0 "R26" V 6373 4835 50  0000 C CNN
-F 1 "2K2" V 6464 4835 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6510 4835 50  0001 C CNN
-F 3 "~" H 6580 4835 50  0001 C CNN
-F 4 "C17520" H 6580 4835 50  0001 C CNN "LCSCStockCode"
-F 5 "0805W8F2201T5E" H 6580 4835 50  0001 C CNN "PartNumber"
-F 6 "TRUE" V 6580 4835 50  0001 C CNN "DONOTPLACE"
-	1    6580 4835
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0143
-U 1 1 600E9EEF
-P 6580 4585
-F 0 "#PWR0143" H 6580 4435 50  0001 C CNN
-F 1 "+3.3V" H 6595 4758 50  0000 C CNN
-F 2 "" H 6580 4585 50  0001 C CNN
-F 3 "" H 6580 4585 50  0001 C CNN
-	1    6580 4585
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6430 4685 6580 4685
-Connection ~ 6580 4685
-Wire Wire Line
-	6580 4685 6685 4685
-Wire Wire Line
-	6685 4585 6580 4585
+	6625 4300 6520 4300
 $Comp
 L power:GND #PWR0144
 U 1 1 6013AD33
-P 6580 4985
-F 0 "#PWR0144" H 6580 4735 50  0001 C CNN
-F 1 "GND" H 6585 4812 50  0000 C CNN
-F 2 "" H 6580 4985 50  0001 C CNN
-F 3 "" H 6580 4985 50  0001 C CNN
-	1    6580 4985
+P 6625 4500
+F 0 "#PWR0144" H 6625 4250 50  0001 C CNN
+F 1 "GND" H 6630 4327 50  0000 C CNN
+F 2 "" H 6625 4500 50  0001 C CNN
+F 3 "" H 6625 4500 50  0001 C CNN
+	1    6625 4500
 	1    0    0    -1  
 $EndComp
-Text Notes 5445 3590 0    50   ~ 0
-Standard Module comms - second string
 Text Notes 610  2280 0    50   ~ 0
 Power input
 $Comp
@@ -2771,8 +2675,55 @@ Text Notes 575  11070 0    118  ~ 0
 Non-Commercial — You may not use the material for commercial purposes.\n
 Text Notes 9680 8005 0    157  ~ 31
 DO NOT USE
-Text Notes 5690 4415 0    157  ~ 31
-DO NOT USE
 Text Notes 6765 2450 0    59   ~ 0
 Not fitted
+$Comp
+L Device:R R27
+U 1 1 604AD07B
+P 6010 7530
+F 0 "R27" V 5930 7530 50  0000 C CNN
+F 1 "10K" V 6090 7530 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5940 7530 50  0001 C CNN
+F 3 "~" H 6010 7530 50  0001 C CNN
+F 4 "C17414" H 6010 7530 50  0001 C CNN "LCSCStockCode"
+F 5 "0805W8F1002T5E" H 6010 7530 50  0001 C CNN "PartNumber"
+F 6 "0" H 6010 7530 50  0001 C CNN "JLCPCBRotation"
+	1    6010 7530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0145
+U 1 1 604AD3C9
+P 6260 7530
+F 0 "#PWR0145" H 6260 7380 50  0001 C CNN
+F 1 "+3V3" H 6275 7703 50  0000 C CNN
+F 2 "" H 6260 7530 50  0001 C CNN
+F 3 "" H 6260 7530 50  0001 C CNN
+	1    6260 7530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6160 7530 6260 7530
+Wire Wire Line
+	5755 7840 5755 7530
+Wire Wire Line
+	5755 7530 5860 7530
+Connection ~ 5755 7840
+Wire Wire Line
+	5755 7840 5740 7840
+Text Notes 6225 7790 0    50   ~ 0
+Pin 1 is alternative screen wake/touch
+Wire Wire Line
+	6370 4400 6625 4400
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 600E9EEF
+P 6625 4200
+F 0 "#PWR0143" H 6625 4050 50  0001 C CNN
+F 1 "+3.3V" H 6640 4373 50  0000 C CNN
+F 2 "" H 6625 4200 50  0001 C CNN
+F 3 "" H 6625 4200 50  0001 C CNN
+	1    6625 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
