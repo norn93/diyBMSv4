@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "DIYBMS ESP32 CONTROLLER"
-Date "2021-02-24"
-Rev "1"
+Date "2021-04-05"
+Rev "1.1"
 Comp "Stuart Pittaway"
 Comment1 ""
 Comment2 ""
@@ -857,18 +857,6 @@ F 4 "C395880" H 4650 2405 50  0001 C CNN "LCSCStockCode"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
-U 1 1 5F3310A5
-P 5305 8680
-F 0 "C5" V 5170 8680 50  0000 C CNN
-F 1 "100nF" V 5245 8505 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5343 8530 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0805KRX7R9BB104_C49678.pdf" H 5305 8680 50  0001 C CNN
-F 4 "C49678" H 5305 8680 50  0001 C CNN "LCSCStockCode"
-	1    5305 8680
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0123
 U 1 1 5F33A4F5
 P 4900 8680
@@ -1194,7 +1182,7 @@ Text Label 15300 1760 0    50   ~ 0
 IO27
 Wire Wire Line
 	9540 4095 9740 4095
-Text Label 5525 8180 0    50   ~ 0
+Text Label 5205 8180 0    50   ~ 0
 CANBUS_S
 Text Label 1315 7650 2    50   ~ 0
 i2c_SDA
@@ -1284,7 +1272,7 @@ F 5 "TCA9534APWR" H 4750 7980 50  0001 C CNN "PartNumber"
 	1    4750 7980
 	1    0    0    -1  
 $EndComp
-Text Notes 4265 9320 0    50   ~ 0
+Text Notes 3380 9125 0    50   ~ 0
 Provides 3.3V I/O pins for internal\ninterfaces.\n\ni2c address 0x38
 Wire Wire Line
 	4350 8425 4350 8380
@@ -1298,7 +1286,7 @@ Wire Wire Line
 	4750 8680 4900 8680
 Connection ~ 4900 8680
 Wire Wire Line
-	4900 8680 5155 8680
+	4900 8680 5040 8680
 Wire Wire Line
 	4750 7380 4865 7380
 Wire Wire Line
@@ -1469,13 +1457,13 @@ FUSED5V
 $Comp
 L Connector:Conn_01x02_Female J10
 U 1 1 5FA6DD26
-P 5725 8380
-F 0 "J10" H 5753 8406 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 5730 8275 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5725 8380 50  0001 C CNN
-F 3 "~" H 5725 8380 50  0001 C CNN
-F 4 "C376120" H 5725 8380 50  0001 C CNN "LCSCStockCode"
-	1    5725 8380
+P 5725 8470
+F 0 "J10" H 5753 8496 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5730 8365 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5725 8470 50  0001 C CNN
+F 3 "~" H 5725 8470 50  0001 C CNN
+F 4 "C376120" H 5725 8470 50  0001 C CNN "LCSCStockCode"
+	1    5725 8470
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1656,8 +1644,6 @@ Text Label 2715 8350 0    50   ~ 0
 RELAY4_SSR
 Wire Wire Line
 	5150 8380 5385 8380
-Wire Wire Line
-	5150 8180 5525 8180
 $Comp
 L Device:R R19
 U 1 1 5FC5F324
@@ -2059,12 +2045,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0132
 U 1 1 5FF3D284
-P 5525 8480
-F 0 "#PWR0132" H 5525 8230 50  0001 C CNN
-F 1 "GND" H 5395 8465 50  0000 C CNN
-F 2 "" H 5525 8480 50  0001 C CNN
-F 3 "" H 5525 8480 50  0001 C CNN
-	1    5525 8480
+P 5525 8570
+F 0 "#PWR0132" H 5525 8320 50  0001 C CNN
+F 1 "GND" H 5395 8555 50  0000 C CNN
+F 2 "" H 5525 8570 50  0001 C CNN
+F 3 "" H 5525 8570 50  0001 C CNN
+	1    5525 8570
 	1    0    0    -1  
 $EndComp
 NoConn ~ 13700 2360
@@ -2074,71 +2060,53 @@ Connected to USB port\n
 $Comp
 L Device:R R24
 U 1 1 5FEDBE15
-P 6470 8235
-F 0 "R24" V 6390 8235 50  0000 C CNN
-F 1 "10K" V 6550 8235 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6400 8235 50  0001 C CNN
-F 3 "~" H 6470 8235 50  0001 C CNN
-F 4 "C17414" H 6470 8235 50  0001 C CNN "LCSCStockCode"
-F 5 "0805W8F1002T5E" H 6470 8235 50  0001 C CNN "PartNumber"
-F 6 "0" H 6470 8235 50  0001 C CNN "JLCPCBRotation"
-	1    6470 8235
+P 6470 8325
+F 0 "R24" V 6390 8325 50  0000 C CNN
+F 1 "10K" V 6550 8325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6400 8325 50  0001 C CNN
+F 3 "~" H 6470 8325 50  0001 C CNN
+F 4 "C17414" H 6470 8325 50  0001 C CNN "LCSCStockCode"
+F 5 "0805W8F1002T5E" H 6470 8325 50  0001 C CNN "PartNumber"
+F 6 "0" H 6470 8325 50  0001 C CNN "JLCPCBRotation"
+	1    6470 8325
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6620 8235 6680 8235
-Text Notes 5915 8440 0    50   ~ 0
-Emergency stop button (pulled high)
-$Comp
-L power:+3V3 #PWR0133
-U 1 1 5FF33837
-P 5755 8680
-F 0 "#PWR0133" H 5755 8530 50  0001 C CNN
-F 1 "+3V3" H 5870 8705 50  0000 C CNN
-F 2 "" H 5755 8680 50  0001 C CNN
-F 3 "" H 5755 8680 50  0001 C CNN
-	1    5755 8680
-	1    0    0    -1  
-$EndComp
+	6620 8325 6680 8325
+Text Notes 5915 8530 0    50   ~ 0
+Emergency stop button (pulled low to activate)
 Wire Wire Line
-	5455 8680 5755 8680
+	5385 8380 5385 8325
 Wire Wire Line
-	5385 8380 5385 8235
+	5385 8325 6320 8325
 Wire Wire Line
-	5385 8235 6320 8235
-Connection ~ 5385 8380
-Wire Wire Line
-	5385 8380 5525 8380
+	5385 8470 5525 8470
 $Comp
 L power:+3V3 #PWR0134
 U 1 1 5FF73DDE
-P 6680 8235
-F 0 "#PWR0134" H 6680 8085 50  0001 C CNN
-F 1 "+3V3" H 6695 8408 50  0000 C CNN
-F 2 "" H 6680 8235 50  0001 C CNN
-F 3 "" H 6680 8235 50  0001 C CNN
-	1    6680 8235
+P 6680 8325
+F 0 "#PWR0134" H 6680 8175 50  0001 C CNN
+F 1 "+3V3" H 6810 8385 50  0000 C CNN
+F 2 "" H 6680 8325 50  0001 C CNN
+F 3 "" H 6680 8325 50  0001 C CNN
+	1    6680 8325
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J13
+L Connector:Conn_01x03_Female J13
 U 1 1 5FF757DB
-P 6040 7840
-F 0 "J13" H 6068 7866 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 6050 7780 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6040 7840 50  0001 C CNN
-F 3 "~" H 6040 7840 50  0001 C CNN
-	1    6040 7840
+P 6190 8060
+F 0 "J13" H 6218 8086 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6225 7975 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6190 8060 50  0001 C CNN
+F 3 "~" H 6190 8060 50  0001 C CNN
+	1    6190 8060
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 8280 5335 8280
 Wire Wire Line
 	5335 8280 5335 8205
-Wire Wire Line
-	5335 8205 5840 8205
-Wire Wire Line
-	5840 8205 5840 7940
 $Comp
 L ControllerCircuit-rescue:TCA6408AQPWRQ1-ControllerCircuit U3
 U 1 1 5F6428C9
@@ -2152,12 +2120,6 @@ F 5 "TCA6408AQPWRQ1" H 2015 8450 50  0001 C CNN "PartNumber"
 	1    2015 8450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5840 7840 5755 7840
-Wire Wire Line
-	5740 7840 5740 8080
-Wire Wire Line
-	5740 8080 5150 8080
 $Comp
 L power:GND #PWR0135
 U 1 1 5FF69D39
@@ -2675,43 +2637,36 @@ Text Notes 575  11070 0    118  ~ 0
 Non-Commercial — You may not use the material for commercial purposes.\n
 Text Notes 9680 8005 0    157  ~ 31
 DO NOT USE
-Text Notes 6765 2450 0    59   ~ 0
+Text Notes 6825 2430 0    59   ~ 0
 Not fitted
 $Comp
 L Device:R R27
 U 1 1 604AD07B
-P 6010 7530
-F 0 "R27" V 5930 7530 50  0000 C CNN
-F 1 "10K" V 6090 7530 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5940 7530 50  0001 C CNN
-F 3 "~" H 6010 7530 50  0001 C CNN
-F 4 "C17414" H 6010 7530 50  0001 C CNN "LCSCStockCode"
-F 5 "0805W8F1002T5E" H 6010 7530 50  0001 C CNN "PartNumber"
-F 6 "0" H 6010 7530 50  0001 C CNN "JLCPCBRotation"
-	1    6010 7530
+P 6040 7720
+F 0 "R27" V 5960 7720 50  0000 C CNN
+F 1 "10K" V 6120 7720 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5970 7720 50  0001 C CNN
+F 3 "~" H 6040 7720 50  0001 C CNN
+F 4 "C17414" H 6040 7720 50  0001 C CNN "LCSCStockCode"
+F 5 "0805W8F1002T5E" H 6040 7720 50  0001 C CNN "PartNumber"
+F 6 "0" H 6040 7720 50  0001 C CNN "JLCPCBRotation"
+	1    6040 7720
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0145
 U 1 1 604AD3C9
-P 6260 7530
-F 0 "#PWR0145" H 6260 7380 50  0001 C CNN
-F 1 "+3V3" H 6275 7703 50  0000 C CNN
-F 2 "" H 6260 7530 50  0001 C CNN
-F 3 "" H 6260 7530 50  0001 C CNN
-	1    6260 7530
+P 6290 7720
+F 0 "#PWR0145" H 6290 7570 50  0001 C CNN
+F 1 "+3V3" H 6420 7770 50  0000 C CNN
+F 2 "" H 6290 7720 50  0001 C CNN
+F 3 "" H 6290 7720 50  0001 C CNN
+	1    6290 7720
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6160 7530 6260 7530
-Wire Wire Line
-	5755 7840 5755 7530
-Wire Wire Line
-	5755 7530 5860 7530
-Connection ~ 5755 7840
-Wire Wire Line
-	5755 7840 5740 7840
-Text Notes 6225 7790 0    50   ~ 0
+	6190 7720 6290 7720
+Text Notes 6305 7840 0    50   ~ 0
 Pin 1 is alternative screen wake/touch
 Wire Wire Line
 	6370 4400 6625 4400
@@ -2726,4 +2681,100 @@ F 3 "" H 6625 4200 50  0001 C CNN
 	1    6625 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 606CBA53
+P 6080 7390
+F 0 "SW1" H 6080 7675 50  0000 C CNN
+F 1 "PTS645SL50-2LFS" H 6080 7584 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6080 7590 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810121650_C-K-PTS645SL50-2LFS_C221876.pdf" H 6080 7590 50  0001 C CNN
+F 4 "C221876" H 6080 7390 50  0001 C CNN "LCSCStockCode"
+	1    6080 7390
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 606CCCEF
+P 6280 7390
+F 0 "#PWR0142" H 6280 7140 50  0001 C CNN
+F 1 "GND" H 6420 7335 50  0000 C CNN
+F 2 "" H 6280 7390 50  0001 C CNN
+F 3 "" H 6280 7390 50  0001 C CNN
+	1    6280 7390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5335 8205 5920 8205
+Wire Wire Line
+	5940 8080 5940 7960
+Wire Wire Line
+	5940 7960 5990 7960
+Wire Wire Line
+	5150 8080 5840 8080
+Wire Wire Line
+	5890 7720 5840 7720
+Wire Wire Line
+	5840 7720 5840 8080
+Connection ~ 5840 8080
+Wire Wire Line
+	5840 8080 5940 8080
+Wire Wire Line
+	5880 7390 5840 7390
+Wire Wire Line
+	5840 7390 5840 7720
+Connection ~ 5840 7720
+Text Notes 6255 7320 0    50   ~ 0
+Push button to wake screen (pull low)
+Wire Wire Line
+	5990 8060 5955 8060
+Wire Wire Line
+	5955 8060 5955 8110
+Wire Wire Line
+	5955 8110 5920 8110
+Wire Wire Line
+	5920 8110 5920 8205
+$Comp
+L power:GND #PWR0146
+U 1 1 607B3E9D
+P 5990 8160
+F 0 "#PWR0146" H 5990 7910 50  0001 C CNN
+F 1 "GND" H 6130 8105 50  0000 C CNN
+F 2 "" H 5990 8160 50  0001 C CNN
+F 3 "" H 5990 8160 50  0001 C CNN
+	1    5990 8160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5340 8760 5640 8760
+$Comp
+L power:+3V3 #PWR0133
+U 1 1 5FF33837
+P 5640 8760
+F 0 "#PWR0133" H 5640 8610 50  0001 C CNN
+F 1 "+3V3" H 5755 8785 50  0000 C CNN
+F 2 "" H 5640 8760 50  0001 C CNN
+F 3 "" H 5640 8760 50  0001 C CNN
+	1    5640 8760
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F3310A5
+P 5190 8760
+F 0 "C5" V 5055 8760 50  0000 C CNN
+F 1 "100nF" V 5130 8585 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5228 8610 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-CC0805KRX7R9BB104_C49678.pdf" H 5190 8760 50  0001 C CNN
+F 4 "C49678" H 5190 8760 50  0001 C CNN "LCSCStockCode"
+	1    5190 8760
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5040 8760 5040 8680
+Wire Wire Line
+	5385 8470 5385 8380
+Connection ~ 5385 8380
+Wire Wire Line
+	5150 8180 5205 8180
 $EndSCHEMATC
