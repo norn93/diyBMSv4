@@ -40,7 +40,7 @@ jobs:
       - name: Install KICAD
         run: |
           sudo apt install --install-recommends kicad
-		  
+
       - name: Install OPENSCAD
         run: |
           sudo apt install --install-recommends openscad
