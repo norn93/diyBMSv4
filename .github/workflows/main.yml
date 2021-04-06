@@ -37,7 +37,7 @@ jobs:
           sudo apt update
           sudo apt install --install-recommends kicad
 
-      - name: Run kikit
+      - name: Run kikit 4.21
         run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV421/ModuleV421.sch --field LCSCStockCode --missingWarn ./ModuleV421/ModuleV421.kicad_pcb ./ModuleV421
 
       - name: Publish Artifacts 1
@@ -50,20 +50,39 @@ jobs:
              ./ModuleV421/gerbers.zip
           if-no-files-found: error
 
-      - name: Run kikit for GERBER
+      - name: Run kikit for 4.40
         run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ModuleV440/ModuleV440.sch --field LCSCStockCode --missingWarn ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
 
-#      - name: Run kikit for 3D print solder stencil
-#        run: /home/runner/.local/bin/kikit stencil createprinted --pcbthickness 1.6 --thickness 1.0  ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
+      - name: Run kikit for 3D print solder stencil
+        run: /home/runner/.local/bin/kikit stencil createprinted --pcbthickness 1.6 --thickness 1.0  ./ModuleV440/ModuleV440.kicad_pcb ./ModuleV440
 
       - name: Publish Artifacts 2
         uses: actions/upload-artifact@v2
         with:
           name: V440-Gerber
           path: |
+             ./ModuleV440/*.stl
              ./ModuleV440/bom.csv
              ./ModuleV440/pos.csv
              ./ModuleV440/gerbers.zip
+          if-no-files-found: error
+
+
+      - name: Run kikit for ESP32 Controller
+        run: /home/runner/.local/bin/kikit fab jlcpcb --assembly --schematic ./ControllerCircuit/ControllerCircuit.sch --field LCSCStockCode --missingWarn ./ControllerCircuit/ControllerCircuit.kicad_pcb ./ControllerCircuit
+
+      - name: Run kikit for 3D print solder stencil
+        run: /home/runner/.local/bin/kikit stencil createprinted --pcbthickness 1.6 --thickness 1.0  ./ControllerCircuit/ControllerCircuit.kicad_pcb ./ControllerCircuit
+
+      - name: Publish Artifacts 2
+        uses: actions/upload-artifact@v2
+        with:
+          name: ControllerCircuit-Gerber
+          path: |
+             ./ControllerCircuit/*.stl
+             ./ControllerCircuit/bom.csv
+             ./ControllerCircuit/pos.csv
+             ./ControllerCircuit/gerbers.zip
           if-no-files-found: error
 
 
