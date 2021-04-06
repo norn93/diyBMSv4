@@ -36,7 +36,7 @@ jobs:
           sudo add-apt-repository --yes ppa:kicad/kicad-5.1-releases
           sudo add-apt-repository --yes ppa:openscad/releases
           sudo apt update
-		
+
       - name: Install KICAD
         run: |
           sudo apt install --install-recommends kicad
