@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>E:\source\diyBMSv4\ControllerCircuit\ControllerCircuit.sch</source>
-    <date>05/04/2021 12:34:13</date>
+    <date>08/04/2021 12:00:49</date>
     <tool>Eeschema (5.1.5)-3</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -764,12 +764,12 @@
       <tstamp>5FF757DB</tstamp>
     </comp>
     <comp ref="U3">
-      <value>TCA6408AQPWRQ1</value>
+      <value>TCA6408APWR</value>
       <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tca6408a.pdf</datasheet>
       <fields>
-        <field name="LCSCStockCode">C201668</field>
-        <field name="PartNumber">TCA6408AQPWRQ1</field>
+        <field name="LCSCStockCode">C206177</field>
+        <field name="PartNumber">TCA6408APWR</field>
       </fields>
       <libsource lib="ControllerCircuit-rescue" part="TCA6408AQPWRQ1-ControllerCircuit" description=""/>
       <sheetpath names="/" tstamps="/"/>

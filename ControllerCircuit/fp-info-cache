@@ -1,4 +1,4 @@
-19048098067023480
+18998004818061015
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46948,265 +46948,6 @@ connector Wuerth WR-WTB vertical
 0
 10
 10
-ControllerCircuit
-GCT-MEM2055-00-190-01-A
-http://www.farnell.com/datasheets/1917242.pdf
-MicroSD card socket
-0
-13
-11
-ControllerCircuit
-MODULE_ESP32-DEVKITC-32D
-
-
-0
-38
-38
-ControllerCircuit
-Micro_USB-B_LCSC_C77238
-
-
-0
-9
-6
-ControllerCircuit
-RELAY_SRD-05VDC-SL-C
-
-
-0
-5
-5
-ControllerCircuit
-SMD-8_6.6x9.8x2.54P
-
-
-0
-8
-8
-ControllerCircuit
-SOIC-8
-
-
-0
-8
-8
-ControllerCircuit
-SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 1 copper strip
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open
-solder jumper open
-0
-2
-2
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm_NumberLabels
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 Bridged2Bar with 2 copper strip, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm Pads, 0.3mm gap, open
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels
-SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, open
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels
-SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, open, labeled with numbers
-solder jumper open
-0
-3
-3
-ControllerCircuit
-SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open
-solder jumper open
-0
-5
-3
-ControllerCircuit
-SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels
-SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open, labeled with numbers
-solder jumper open
-0
-5
-3
-ControllerCircuit
-TFTSPI_2_8_240x320_TOUCH
-Through hole straight pin header, 1x14, 2.54mm pitch, single row
-Through hole pin header THT 1x14 2.54mm single row
-0
-18
-18
-ControllerCircuit
-Terminal-Block_3.5mm_2P-LCSC_C474892
-
-
-0
-2
-2
-ControllerCircuit
-Terminal-Block_3.5mm_3P-LCSC_C474893
-
-
-0
-3
-3
-ControllerCircuit
-Terminal-Block_3.81_2P-LCSC_C395878
-
-
-0
-2
-2
-ControllerCircuit
-Terminal-Block_3.81_3P-LCSC_C395879
-
-
-0
-3
-3
-ControllerCircuit
-Terminal-Block_3.81_4P_LCSC_C395880
-
-
-0
-4
-4
-ControllerCircuit
-Terminal-Block_5.0mm_3P-LCSC_C395850
-
-
-0
-3
-3
-ControllerCircuit
-diode_symbol
-
-
-0
-0
-0
-ControllerCircuit
-diybmslogo_pcb
-
-
-0
-0
-0
-ControllerCircuit
-microSD_HC_Molex_104031-0811
-1.10mm Pitch microSD Memory Card Connector, Surface Mount, Push-Pull Type, 1.42mm Height, with Detect Switch (https://www.molex.com/pdm_docs/sd/1040310811_sd.pdf)
-microSD SD molex
-0
-14
-11
 Converter_ACDC
 Converter_ACDC_CUI_PBO-3-Sxx_THT_Vertical
 ACDC-Converter, 3W, CUI PBO-3, THT https://www.cui.com/product/resource/pbo-3.pdf
@@ -49027,6 +48768,48 @@ THT ceramic resonator filter DSS6
 0
 3
 3
+CurrentShuntCircuit
+Murata-3020-0110X-0
+200A/300A/500A 50mV DC Shunt
+Shunt
+0
+0
+0
+CurrentShuntCircuit
+Murata-3020-01101-0
+150A 50mV DC Shunt
+Shunt
+0
+0
+0
+CurrentShuntCircuit
+Terminal-Block_3.81_2P-LCSC_C395878
+
+
+0
+2
+2
+CurrentShuntCircuit
+Terminal-Block_3.81_4P_LCSC_C395880
+
+
+0
+4
+4
+CurrentShuntCircuit
+diode_symbol
+
+
+0
+0
+0
+CurrentShuntCircuit
+diybms_logo
+
+
+0
+0
+0
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
