@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "DIYBMS ESP32 CONTROLLER"
-Date "2021-04-05"
-Rev "1.1"
+Date "2021-04-08"
+Rev "1.2"
 Comp "Stuart Pittaway"
 Comment1 ""
 Comment2 ""
@@ -2092,17 +2092,6 @@ F 3 "" H 6680 8325 50  0001 C CNN
 	1    6680 8325
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x03_Female J13
-U 1 1 5FF757DB
-P 6190 8060
-F 0 "J13" H 6218 8086 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6225 7975 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6190 8060 50  0001 C CNN
-F 3 "~" H 6190 8060 50  0001 C CNN
-	1    6190 8060
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 8280 5335 8280
 Wire Wire Line
@@ -2327,8 +2316,6 @@ F 3 "" H 6780 6680 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6780 6680 6825 6680
-Text GLabel 4195 1455 0    50   Input ~ 0
-FUSED5V
 $Comp
 L Connector:Conn_01x04_Female J12
 U 1 1 5FF89203
@@ -2486,7 +2473,7 @@ Wire Wire Line
 Wire Wire Line
 	3255 800  3285 800 
 Wire Wire Line
-	3255 820  3255 950 
+	3255 820  3255 920 
 Connection ~ 3255 820 
 Wire Wire Line
 	3435 600  3585 600 
@@ -2642,32 +2629,30 @@ Not fitted
 $Comp
 L Device:R R27
 U 1 1 604AD07B
-P 6040 7720
-F 0 "R27" V 5960 7720 50  0000 C CNN
-F 1 "10K" V 6120 7720 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5970 7720 50  0001 C CNN
-F 3 "~" H 6040 7720 50  0001 C CNN
-F 4 "C17414" H 6040 7720 50  0001 C CNN "LCSCStockCode"
-F 5 "0805W8F1002T5E" H 6040 7720 50  0001 C CNN "PartNumber"
-F 6 "0" H 6040 7720 50  0001 C CNN "JLCPCBRotation"
-	1    6040 7720
+P 6040 7630
+F 0 "R27" V 5960 7630 50  0000 C CNN
+F 1 "10K" V 6120 7630 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5970 7630 50  0001 C CNN
+F 3 "~" H 6040 7630 50  0001 C CNN
+F 4 "C17414" H 6040 7630 50  0001 C CNN "LCSCStockCode"
+F 5 "0805W8F1002T5E" H 6040 7630 50  0001 C CNN "PartNumber"
+F 6 "0" H 6040 7630 50  0001 C CNN "JLCPCBRotation"
+	1    6040 7630
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0145
 U 1 1 604AD3C9
-P 6290 7720
-F 0 "#PWR0145" H 6290 7570 50  0001 C CNN
-F 1 "+3V3" H 6420 7770 50  0000 C CNN
-F 2 "" H 6290 7720 50  0001 C CNN
-F 3 "" H 6290 7720 50  0001 C CNN
-	1    6290 7720
+P 6290 7630
+F 0 "#PWR0145" H 6290 7480 50  0001 C CNN
+F 1 "+3V3" H 6420 7680 50  0000 C CNN
+F 2 "" H 6290 7630 50  0001 C CNN
+F 3 "" H 6290 7630 50  0001 C CNN
+	1    6290 7630
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6190 7720 6290 7720
-Text Notes 6305 7840 0    50   ~ 0
-Pin 1 is alternative screen wake/touch
+	6190 7630 6290 7630
 Wire Wire Line
 	6370 4400 6625 4400
 $Comp
@@ -2685,8 +2670,8 @@ $Comp
 L Switch:SW_Push SW1
 U 1 1 606CBA53
 P 6080 7390
-F 0 "SW1" H 6080 7675 50  0000 C CNN
-F 1 "PTS645SL50-2LFS" H 6080 7584 50  0000 C CNN
+F 0 "SW1" H 5895 7485 50  0000 C CNN
+F 1 "PTS645SL50-2LFS" H 6660 7500 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6080 7590 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810121650_C-K-PTS645SL50-2LFS_C221876.pdf" H 6080 7590 50  0001 C CNN
 F 4 "C221876" H 6080 7390 50  0001 C CNN "LCSCStockCode"
@@ -2705,46 +2690,15 @@ F 3 "" H 6280 7390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5335 8205 5920 8205
-Wire Wire Line
-	5940 8080 5940 7960
-Wire Wire Line
-	5940 7960 5990 7960
-Wire Wire Line
 	5150 8080 5840 8080
 Wire Wire Line
-	5890 7720 5840 7720
-Wire Wire Line
-	5840 7720 5840 8080
-Connection ~ 5840 8080
-Wire Wire Line
-	5840 8080 5940 8080
+	5890 7630 5840 7630
 Wire Wire Line
 	5880 7390 5840 7390
 Wire Wire Line
-	5840 7390 5840 7720
-Connection ~ 5840 7720
-Text Notes 6255 7320 0    50   ~ 0
+	5840 7390 5840 7630
+Text Notes 6330 7400 0    50   ~ 0
 Push button to wake screen (pull low)
-Wire Wire Line
-	5990 8060 5955 8060
-Wire Wire Line
-	5955 8060 5955 8110
-Wire Wire Line
-	5955 8110 5920 8110
-Wire Wire Line
-	5920 8110 5920 8205
-$Comp
-L power:GND #PWR0146
-U 1 1 607B3E9D
-P 5990 8160
-F 0 "#PWR0146" H 5990 7910 50  0001 C CNN
-F 1 "GND" H 6130 8105 50  0000 C CNN
-F 2 "" H 5990 8160 50  0001 C CNN
-F 3 "" H 5990 8160 50  0001 C CNN
-	1    5990 8160
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5340 8760 5640 8760
 $Comp
@@ -2777,4 +2731,87 @@ Wire Wire Line
 Connection ~ 5385 8380
 Wire Wire Line
 	5150 8180 5205 8180
+$Comp
+L Device:R R7
+U 1 1 6094C607
+P 6565 8075
+F 0 "R7" V 6485 8075 50  0000 C CNN
+F 1 "10K" V 6645 8075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6495 8075 50  0001 C CNN
+F 3 "~" H 6565 8075 50  0001 C CNN
+F 4 "C17414" H 6565 8075 50  0001 C CNN "LCSCStockCode"
+F 5 "0805W8F1002T5E" H 6565 8075 50  0001 C CNN "PartNumber"
+F 6 "0" H 6565 8075 50  0001 C CNN "JLCPCBRotation"
+	1    6565 8075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 6094C611
+P 6815 8075
+F 0 "#PWR05" H 6815 7925 50  0001 C CNN
+F 1 "+3V3" H 6945 8125 50  0000 C CNN
+F 2 "" H 6815 8075 50  0001 C CNN
+F 3 "" H 6815 8075 50  0001 C CNN
+	1    6815 8075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6715 8075 6815 8075
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6094C61E
+P 6605 7825
+F 0 "SW2" H 6435 7910 50  0000 C CNN
+F 1 "PTS645SL50-2LFS" H 7035 7930 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6605 8025 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810121650_C-K-PTS645SL50-2LFS_C221876.pdf" H 6605 8025 50  0001 C CNN
+F 4 "C221876" H 6605 7825 50  0001 C CNN "LCSCStockCode"
+	1    6605 7825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6094C628
+P 6805 7825
+F 0 "#PWR02" H 6805 7575 50  0001 C CNN
+F 1 "GND" H 6945 7770 50  0000 C CNN
+F 2 "" H 6805 7825 50  0001 C CNN
+F 3 "" H 6805 7825 50  0001 C CNN
+	1    6805 7825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6415 8075 6365 8075
+Wire Wire Line
+	6405 7825 6365 7825
+Connection ~ 5840 7630
+Wire Wire Line
+	5840 7630 5840 8080
+Wire Wire Line
+	6365 7825 6365 7950
+Wire Wire Line
+	6245 8205 6245 7950
+Wire Wire Line
+	6245 7950 6365 7950
+Wire Wire Line
+	5335 8205 6245 8205
+Connection ~ 6365 7950
+Wire Wire Line
+	6365 7950 6365 8075
+Text Notes 2230 2130 0    39   ~ 0
+Note use of TJA1051T/3 this permits 5v and 3v\noperation, don't use other  devices
+Wire Wire Line
+	3255 920  3355 920 
+Wire Wire Line
+	3355 920  3355 1030
+Wire Wire Line
+	3355 1030 3815 1030
+Wire Wire Line
+	3815 1030 3815 1455
+Wire Wire Line
+	3815 1455 4195 1455
+Connection ~ 3255 920 
+Wire Wire Line
+	3255 920  3255 950 
 $EndSCHEMATC

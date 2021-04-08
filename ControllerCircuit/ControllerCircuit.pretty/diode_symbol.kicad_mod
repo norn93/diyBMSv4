@@ -1,8 +1,8 @@
-(module diode_symbol (layer F.Cu) (tedit 0)
-  (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
+(module diode_symbol (layer F.Cu) (tedit 606F0408)
+  (fp_text reference G*** (at 4.82 1.97) (layer F.Fab) hide
     (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
-  (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
+  (fp_text value Diode (at 5.47 -0.02) (layer F.Fab) hide
     (effects (font (size 1.524 1.524) (thickness 0.3)))
   )
   (fp_poly (pts (xy 1.011861 -1.035502) (xy 1.054483 -1.007831) (xy 1.061861 -0.999724) (xy 1.068606 -0.989702)
